@@ -10,3 +10,4 @@ int main(void)
 	i = 0;
 	positive_or_negativ(i);
 	return (0);
+}
