@@ -5,11 +5,18 @@
  */
 void print_line(int n)
 {
-	int i;
+	int a;
 
-	for (i = 0; i < n; i++)
+	if (n <= 0)
 	{
-	_putchar(' ');
+	_putchar('\n');
+	}
+	else
+	{
+	for (a = 0; a < n; a++)
+	{
+	_putchar(95);
 	}
 	_putchar('\n');
+	}
 }
