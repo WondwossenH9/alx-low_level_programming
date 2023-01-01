@@ -2,6 +2,7 @@
 /**
  * print_diagonal - prints a diagonal line on the termnal
  * @n: integer
+ * return: empty
  */
 void print_diagonal(int n)
 {
@@ -13,13 +14,13 @@ void print_diagonal(int n)
 	}
 	else
 	{
-	for (j = 1; j <= n; j++)
+	for (j = 0; j <= n; j++)
 	{
-	for (k = 1; k < j; j++)
+	for (k = 0; k < j; k++)
 	{
-	_putchar(' ');
+	_putchar(32);
 	}
-	_putchar('\\');
+	_putchar(92);
 	_putchar('\n');
 	}
 	}
