@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_diagonal - prints a diagonal line on the termnal
- * @n: integer
+ * @n: number of times to draw lines
  * return: empty
  */
 void print_diagonal(int n)
@@ -14,7 +14,7 @@ void print_diagonal(int n)
 	}
 	else
 	{
-	for (j = 0; j <= n; j++)
+	for (j = 0; j < n; j++)
 	{
 	for (k = 0; k < j; k++)
 	{
