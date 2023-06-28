@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
  * main - prints numbers from 1 to 100 followed by a new line
  * numbers multiples of 3 main prints Fizz
@@ -7,7 +7,7 @@
  * for numbers multiples of both 3  & 5 main prints FizzBuzz
  * Return: Always 0 (Success)
  */
-int mai(void)
+int main(void)
 {
 	int i;
 	 for (i = 1; i <= 100; i++)
