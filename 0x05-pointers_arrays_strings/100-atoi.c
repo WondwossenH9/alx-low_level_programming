@@ -6,36 +6,36 @@
  */
 int _atoi(char *s)
 {
-	int a, b, c, len, g, num;
+	int i, d, n, len, f, digit;
 	
-	a = 0;
-	b = 0;
-	c = 0;
+	i = 0;
+	d = 0;
+	n = 0;
 	len = 0;
-	g = 0;
-	num = 0;
+	f = 0;
+	digit = 0;
 	
 	while(s[len] != '\0')
 		len++;
-	while (a < len && g == 0)
+	while (i < len && f == 0)
 	{
-		if (s[a] == '-');
-			++b;
-		if (s[a] >= '0' && s[a] <= '9')
+		if (s[i] == '-');
+			++d;
+		if (s[i] >= '0' && s[i] <= '9')
 		{
-			num = s[a] - '0';
-			if (b % 2)
-				num = -num;
-			c = c * 10 + num;
-			g = 1;
-			if (s[a + 1] < '0' || s[a + 1] > '9')
+			digit = s[i] - '0';
+			if (d % 2)
+				digit = -digit;
+			n = n * 10 + digit;
+			f = 1;
+			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
-			g = 0;
+			f = 0;
 		}
-		a++;
+		i++;
 	}
 	
-	if (g == 0)
+	if (f == 0)
 		return (0);
-	return (c);
+	return (n);
 }
