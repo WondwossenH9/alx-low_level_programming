@@ -5,24 +5,22 @@
  * Return: the integer converted from the string
  */
 int _atoi(char *s)
-{       
-        int a, b, c, len, g, num;
-        
-        a = 0;
-        b = 0;
-        c = 0;
-        len = 0;
+{
+	int a, b, c, len, g, num;
+	
+	a = 0;
+	b = 0;
+	c = 0;
+	len = 0;
 	g = 0;
-        num = 0;
-        
-        while(s[len] != '\0')
-        {       
-                len++;
-        }       
-        while (a < len && g == 0)
-        {       
-                if (s[a] == '-');
-		++b;
+	num = 0;
+	
+	while(s[len] != '\0')
+		len++;
+	while (a < len && g == 0)
+	{
+		if (s[a] == '-');
+			++b;
 		if (s[a] >= '0' && s[a] <= '9')
 		{
 			num = s[a] - '0';
@@ -36,6 +34,7 @@ int _atoi(char *s)
 		}
 		a++;
 	}
+	
 	if (g == 0)
 		return (0);
 	return (c);
