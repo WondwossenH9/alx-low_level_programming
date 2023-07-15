@@ -3,8 +3,6 @@
  * is_prime_number - returns if a number is prime
  * @n: number input
  * Return: (1) if prime otherwise (0)
- */
-/**
  * check_prime - checks if number is prime
  * @n: number input to check
  * @i: iteration counter
