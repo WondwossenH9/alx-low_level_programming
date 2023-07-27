@@ -6,7 +6,7 @@
  * @height: height input
  * Return: pointer to a 2 dimentional array
  */
-int **alloc_grid(int width, int height)		
+int **alloc_grid(int width, int height)
 {
 	int **a;
 	int b, c;
