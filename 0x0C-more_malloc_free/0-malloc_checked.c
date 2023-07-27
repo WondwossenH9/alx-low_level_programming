@@ -10,7 +10,7 @@ void *malloc_checked(unsigned int b)
 {
 	void *potr;
 
-	ptr = malloc(b);
+	potr = malloc(b);
 	if (potr == NULL)
 		exit(98);
 	return (potr);
