@@ -12,9 +12,9 @@ char *str_concat(char *s1, char *s2)
 	int a, ba;
 
 	if (s1 == NULL)
-		s1 = " ";
+		s1 = "";
 	if (s2 == NULL)
-		s2 = " ";
+		s2 = "";
 	a = ba = 0;
 	while (s1[a] != '\0')
 		a++;
