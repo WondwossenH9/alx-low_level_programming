@@ -2,9 +2,8 @@
 /**
  * print_sign - prints the sign of a number
  * @n: is the number to be checked
- * Returns 1 and prints + if n is greater than zero
- * Returns 0 and prints 0 if n is zero
- * Returns -1 and prints - if n is less than zero
+ * Return: 1 and prints + if n is greater than zero
+ * else prints 0 if n is zero or -1 if n less than zero
  */
 int print_sign(int n)
 {
@@ -15,8 +14,9 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
+		_putchar(48);
 		return (0);
-	} else
+	} else if (n < 0)
 	{
 		_putchar('-');
 		return (-1);
