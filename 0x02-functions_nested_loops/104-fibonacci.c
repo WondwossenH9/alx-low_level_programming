@@ -24,15 +24,15 @@ int main(void)
 		pre = post - pre;
 	}
 
-	pre1 = (pre / i);
-	pre2 = (pre % i);
-	post1 = (post / i);
-	post2 = (post % i);
+	pre1 = (pre / m);
+	pre2 = (pre % m);
+	post1 = (post / m);
+	post2 = (post % m);
 
 	for (i = 92; i < 99; ++i)
 	{
-		printf(", %lu", post1 + (post2 / i));
-		printf("%lu", post2 % i);
+		printf(", %lu", post1 + (post2 / m));
+		printf("%lu", post2 % m);
 		post1 = post1 + pre1;
 		pre1 = post1 - pre1;
 		post2 = post2 + pre2;
@@ -41,4 +41,3 @@ int main(void)
 	print('\n');
 	return (0);
 }
-
