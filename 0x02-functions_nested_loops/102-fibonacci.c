@@ -7,18 +7,22 @@
 int main(void)
 {
 	int num;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	long fib1 = 0, fib2 = 1;
 
-	for (num = 0; num < 50; num++)
+	while (num < 52)
 	{
-		sum = fib1 + fib2;
-		printf("%lu", sum);
-		fib1 = fib2;
-		fib2 = sum;
-		if (num == 49)
-			printf('\n');
+		if (num == 0)
+			printf("%ld", fib1);
+		else if (num == 1)
+			printf(", %ld", fib2);
 		else
-			printf(", ");
+		{
+			fib2 += fib1;
+			fib1 = fib2 - fib1;
+			printf(", %ld", fib2);
+		}
+		++num;
 	}
+	printf("\n");
 	return (0);
 }
