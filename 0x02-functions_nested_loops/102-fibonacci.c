@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int num;
+	int num = 0;
 	long fib1 = 0, fib2 = 1;
 
 	while (num < 54)
