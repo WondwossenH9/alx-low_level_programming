@@ -9,7 +9,7 @@ int main(void)
 	int num;
 	long fib1 = 0, fib2 = 1;
 
-	while (num < 52)
+	while (num < 54)
 	{
 		if (num == 0)
 			printf("%ld", fib1);
