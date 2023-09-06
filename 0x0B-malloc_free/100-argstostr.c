@@ -4,7 +4,8 @@
  * *argstostr - concatenates all the arguments of the program
  * @ac: int argument
  * @av - double pointer argument
- * Return: NULL if ac == 0 or av == NULL else a pointer to a new string, or NULL if it fails
+ * Return: NULL if ac == 0 or av == NULL
+ * else a pointer to a new string, or NULL if it fails
  */
 char *argstostr(int ac, char **av)
 {
