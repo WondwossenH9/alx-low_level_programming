@@ -18,6 +18,7 @@ char *argstostr(int ac, char **av)
 		for (j = 0; av[i][j]; j++)
 			l++;
 	}
+	l += ac;
 	ptrstr = malloc(sizeof(char) * l + 1);
 	if (ptrstr == NULL)
 		return (NULL);
