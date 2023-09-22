@@ -9,7 +9,7 @@
 void print_all(const char * const format, ...)
 {
 	int i = 0;
-	char *strptr, *b = "";
+	char *strptr, *b = " ";
 
 	va_list l;
 
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 					a++;
 					continue;
 			}
-			b = ", ";
+			b = ",";
 			a++;
 		}
 	}
