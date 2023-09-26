@@ -3,15 +3,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * struct listint_a - singly linked list
+ * struct listint_s - singly linked list
  * @b: int
  * @next: next node pointer
  * Description: singly linked list node
  */
-typedef struct listint_a
+typedef struct listint_s
 {
-	int b;
-	struct listint_a *next;
+	int n;
+	struct listint_s *next;
 } listint_t;
 
 int _putchar(char c);
