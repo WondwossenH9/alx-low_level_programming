@@ -4,7 +4,7 @@
 #include <stdlib.h>
 /**
  * struct listint_s - singly linked list
- * @b: int
+ * @n: int
  * @next: next node pointer
  * Description: singly linked list node
  */
