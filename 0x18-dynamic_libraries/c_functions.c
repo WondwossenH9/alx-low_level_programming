@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <stdio.h
+#include <stdlib.h>
 /**
  * addition - adds two ints
  * @i: first int
