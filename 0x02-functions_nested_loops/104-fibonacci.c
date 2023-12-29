@@ -14,6 +14,7 @@ int main(void)
 	while (count < 96)
 	{
 		int temp = a + b;
+
 		printf(", %d", temp);
 		a = b;
 		b = temp;
