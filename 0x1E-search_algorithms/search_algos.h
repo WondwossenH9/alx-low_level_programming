@@ -6,6 +6,8 @@
 #include <math.h>
 
 /**
+ * struct listint_s - singly linked list
+ *
  * @n: integer
  * @index: index of node in the list
  * @next: pointer to next node
